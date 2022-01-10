@@ -39,7 +39,7 @@ a {
 }
 .title {
   font-family: "Raleway", sans-serif;
-  font-size: calc(40px + 40 * (100vw / 1210));
+  font-size: calc(40px + 40 * (100vw / 1200));
   line-height: 96px;
   font-weight: 100;
   color: #fff;
@@ -54,7 +54,7 @@ a {
 }
 .news__item {
   width: 31.5%;
-  height: 368px;
+  min-height: 368px;
   position: relative;
   margin-bottom: 32px;
 }
@@ -87,13 +87,19 @@ a {
 }
 @media (max-width: 767px) {
   .title {
-    font-size: calc(40px + (40 + (40 * 0.7)) * ((100vw - 320px) / 1210));
+    font-size: calc(40px + (40 + (40 * 0.7)) * ((100vw - 320px) / 1200));
   }
   .news__inner {
     justify-content: space-around;
   }
   .news__item {
     width: 237px;
+  }
+}
+@media (max-width: 485px) {
+  .news__item {
+    width: 90%;
+    height: 385px;
   }
 }
 @media (max-width: 440px) {
